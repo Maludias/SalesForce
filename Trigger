@@ -1,0 +1,6 @@
+trigger VerifNovaCaseTrigger on Case (before insert, After Insert) {
+        if(Trigger.isInsert && Trigger.isAfter ){
+        VerifNovaCase.NcaseStatus(trigger.new);
+    }
+
+}
