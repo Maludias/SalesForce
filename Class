@@ -1,0 +1,15 @@
+public class VerifNovaCase {
+    Public Static void NcaseStatus(list<case>Status){
+        list<Estorno__c> CadEstorn = new list<Estorno__c>();
+               
+         for(case preencheEst : Status){
+                    Estorno__c estornoPreen = new Estorno__c();{
+                    estornoPreen.DatCompra__c = preencheEst.DataCp__c;
+                        
+                    CadEstorn.add(estornoPreen);
+                }
+                
+               insert CadEstorn;
+                              
+            
+        } 
